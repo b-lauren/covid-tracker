@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,9 +21,24 @@ nav, footer {
   color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 16px;
 }
 
+a i {
+  color: #fff;
+  padding: 0 4px;
+}
+
+a i:hover {
+  opacity: 0.7;
+}
+
 footer {
+  text-align: center;
+  justify-content: center;
+}
+
+.center {
   text-align: center;
 }
