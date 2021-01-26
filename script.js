@@ -8,13 +8,13 @@ fetch('https://disease.sh/v3/covid-19/all')
   .then(data => {
     console.log(data)
     const casesToday = data.cases;
-    cases.innerHTML = casesToday;
+    cases.innerHTML = casesToday.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     const death = data.deaths;
-    deaths.innerHTML = death;
+    deaths.innerHTML = death.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     const recover = data.recovered;
-    recovered.innerHTML = recover;
+    recovered.innerHTML = recover.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
     const affected = data.affectedCountries;
     affectedCountries.innerHTML = affected;
