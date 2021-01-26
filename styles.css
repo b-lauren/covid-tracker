@@ -116,9 +116,10 @@ footer {
   }
 
   .stats {
-    margin-bottom: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
+    margin-top: 20px;
+    /*display: grid;
+    grid-template-columns: 1fr;*/
+    flex-direction: column;
   }
 
   .stats div {
