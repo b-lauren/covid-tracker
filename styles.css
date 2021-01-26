@@ -120,9 +120,11 @@ footer {
     /*display: grid;
     grid-template-columns: 1fr;*/
     flex-direction: column;
+    max-width: 50%;
   }
 
   .stats div {
     padding: 18px;
+    margin-bottom: 12px;
   }
 }
