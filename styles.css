@@ -41,6 +41,11 @@ h1 {
   font-weight: bold;
 }
 
+.lead {
+  color: #404040;
+  margin-bottom: 20px;
+}
+
 nav, footer {
   width: 100%;
   background-color: #545FEC;
@@ -100,14 +105,23 @@ footer {
     height: 0.8rem;
   }
 
+  .lead {
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 40px;
+  }
+
   .virus {
     margin-left: 4px;
   }
 
   .stats {
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
+  .stats div {
+    padding: 18px;
   }
 }
