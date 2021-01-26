@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #F7F7FF;
+}
+
+.page-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+nav, footer {
+  width: 100%;
+  background-color: #545FEC;
+  height: 60px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+footer {
+  text-align: center;
+}
