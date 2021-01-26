@@ -100,7 +100,7 @@ footer {
 
 /*Media queries*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .chunky:after {
     height: 0.8rem;
   }
@@ -117,8 +117,6 @@ footer {
 
   .stats {
     margin-top: 20px;
-    /*display: grid;
-    grid-template-columns: 1fr;*/
     flex-direction: column;
     max-width: 50%;
   }
