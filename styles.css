@@ -38,6 +38,7 @@ footer {
 h1 {
   font-size: 40px;
   color: #404040;
+  z-index: 100;
 }
 
 .main {
@@ -45,10 +46,11 @@ h1 {
 }
 
 .chunky {
-  position: relative;
+  /*position: relative;*/
+  border-bottom: 3px solid #88E58D;
 }
 
-.chunky:after {
+/*.chunky:after {
   content: "";
   position: absolute;
   bottom: 0.1rem;
@@ -60,11 +62,11 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   font-weight: bold;
-}
+}*/
 
 .lead {
   color: #404040;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 a i {
@@ -112,12 +114,11 @@ a i:hover {
 /*Media queries*/
 
 @media only screen and (max-width: 414px) {
-  .chunky:after {
+/*  .chunky:after {
     height: 0.8rem;
   }
-
+*/
   .lead {
-    font-size: 10px;
     text-align: center;
     padding: 10px 40px;
   }
@@ -125,11 +126,7 @@ a i:hover {
   .virus {
     margin-left: 4px;
   }
-/*
-  .stats {
-    margin-bottom: 400px;
-  }
-*/
+
   .stats div {
     padding: 18px;
     margin-bottom: 12px;
