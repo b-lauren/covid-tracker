@@ -100,8 +100,8 @@ a i:hover {
 
 .grid-container {
   display: grid;
-  grid-row-gap: 30px;
-  grid-template-columns: repeat(auto-fill, 190px);
+  grid-row-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   padding: 10px;
 }
 
@@ -125,13 +125,21 @@ a i:hover {
   .virus {
     margin-left: 4px;
   }
-
+/*
   .stats {
     margin-bottom: 400px;
   }
-
+*/
   .stats div {
     padding: 18px;
     margin-bottom: 12px;
+  }
+
+  .grid-item span {
+    font-size: 14px;
+  }
+
+  .grid-item p {
+    font-size: 14px;
   }
 }
