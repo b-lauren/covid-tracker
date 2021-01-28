@@ -91,12 +91,34 @@ a i:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 32px;
+  /*display: flex;*/
+  /*justify-content: space-between;
+  align-items: center;*/
+  /*padding: 18px 32px;*/
   max-width: 60%;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+ /* display: grid;
+  grid-template-rows: 1fr 1fr;*/
+  /*display: grid;
+  grid-row-gap: 30px;*/
+}
+
+.stats div {
+  text-align: center;
+}
+
+/*.stats > p {
+  text-align: center;
+}
+*/
+.grid-container {
+  display: grid;
+  grid-row-gap: 30px;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fill, 190px);
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  padding: 10px;
 }
 
 .stats span {
@@ -120,7 +142,7 @@ a i:hover {
     margin-left: 4px;
   }
 
-  .stats {
+/*  .stats {
     margin-top: 20px;
     flex-direction: column;
     max-width: 50%;
@@ -128,9 +150,23 @@ a i:hover {
     align-items: center;
     margin-bottom: 30px;
   }
+*/
+  /*..grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }*/
+
+/*  .stats {
+    display: flex;
+  }*/
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, auto);
+  }
 
   .stats div {
     padding: 18px;
     margin-bottom: 12px;
+
   }
 }
